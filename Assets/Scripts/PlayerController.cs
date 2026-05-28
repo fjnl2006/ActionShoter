@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
     
     [Header("Health Variables")]
     [SerializeField] int maxHealth = 100;
-    int currentHealth = 100;
+    public int currentHealth = 100;
 
     public GameObject canva;
     public GameObject menu;

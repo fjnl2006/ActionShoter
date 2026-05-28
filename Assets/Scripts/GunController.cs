@@ -12,7 +12,7 @@ public class GunController : MonoBehaviour, IWeapon
     [SerializeField] AmmoUI ammoUI;
 
 
-    int Damage;             // Daño de cada disparo
+    public int Damage;             // Daño de cada disparo
     float ReloadTime;       // Tiempo de recarga de la munición
     float Range;            // Rango de alcance del arma
     float FireRating;       // Cadencia entre disparos
