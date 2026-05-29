@@ -22,6 +22,16 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        if (currentHealth <= 0)
+            currentHealth = maxHealth;
+    }
+
+    /// <summary>
+    /// Aplica vida según la oleada (llamar justo después de Instantiate).
+    /// </summary>
+    public void InitializeForWave(int health)
+    {
+        maxHealth = Mathf.Max(1, health);
         currentHealth = maxHealth;
     }
     

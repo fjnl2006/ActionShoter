@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
     
     
     [Header("Health Variables")]
-    [SerializeField] int maxHealth = 100;
+    public int maxHealth = 100;
     public int currentHealth = 100;
 
     public GameObject canva;
@@ -221,6 +221,13 @@ public class PlayerController : MonoBehaviour
         {
             Die();
         }
+    }
+
+    public void Heal(int amount)
+    {
+        currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
+        healtUI.UpdateHealt(currentHealth, maxHealth);
+        Debug.Log("¡El jugador ha curado " + amount + " de vida! Vida actual: " + currentHealth);
     }
 
     void Die()
