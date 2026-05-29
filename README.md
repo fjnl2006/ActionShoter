@@ -4,12 +4,12 @@ Tienes 3 diferentes tipos de armas, donde el tiempo de recarga, rango, tiempo en
 
 He añadido un terrain, con una nav mesh.
 
-Diferentes spawners de enemigos.
+Diferentes spawners de enemigos que proporcionan oleadas para cada enemigo que hay.
 
-Una UI donde te muestra un temporizador, la vida y la munición que tienes
+Una UI donde te muestra un temporizador, la vida y la munición que tienes.
 
 Hay 2 clases de enemigos uno pesado que hace más daño y va más lento y uno ligero, que hace menos daño y va más rapido.
 
-He añadido PowerUps, por el momento solo hay 2
+He añadido PowerUps, por el momento solo hay 2.
 
 Hay un menu de inicio, de pausa y tambien de cuando pierdes. Tu objetivo es aguantar el máximo de tiempo posible
